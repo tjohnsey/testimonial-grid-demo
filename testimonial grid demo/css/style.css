@@ -125,31 +125,30 @@ h2 {
   color: var(--grey-blue);
 }
 .block4 {
-  background-color: var(--white);
-
+  background-color: var(--black-blue);
   grid-area: 7/4/13/10;
 }
 .block4 .name {
-  color: var(--black-blue);
+  color: var(--light-grey-1);
 }
 .block4 h2 {
-  color: var(--black-blue);
+  color: var(--light-grey-2);
 }
 .block4 p {
-  color: var(--grey-blue);
+  color: var(--white);
 }
 .block5 {
-  background-color: var(--black-blue);
+  background-color: var(--white);
   grid-area: 7/1/13/4;
 }
 .block5 .name {
-  color: var(--white);
+  color: var(--black-blue);
 }
 .block5 h2 {
-  color: var(--white);
+  color: var(--grey-blue);
 }
 .block5 p {
-  color: var(--white);
+  color: var(--black-blue);
 }
 
 /*Mobile*/
