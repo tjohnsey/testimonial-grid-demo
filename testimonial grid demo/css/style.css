@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 10px;
+}
+
+:root {
+  /*Primary Color*/
+  --violet: hsl(263, 55%, 52%);
+  --ring: hsl(263, 80%, 63%);
+  --grey-blue: hsl(217, 19%, 35%);
+  --black-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  /*Secondary Color*/
+  --light-grey-1: hsl(0, 0%, 81%);
+  --light-grey-2: hsl(210, 46%, 95%);
+}
+
+/*Fonts*/
+
+.name,
+p {
+  font-size: 1.3rem;
+  z-index: 3;
+}
+.status {
+  font-size: 1.1rem;
+}
+h2 {
+  font-size: 2rem;
+}
+/*Images*/
+.pic {
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.ring {
+  border: 2px solid var(--ring);
+}
+.quote-img {
+  position: absolute;
+  top: 1%;
+  left: 60%;
+  height: 90px;
+}
+.container {
+  background-color: rgb(206, 211, 221);
+  height: 100vh;
+}
+/*GRID*/
+#grid {
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  max-width: 1440px;
+  gap: 20px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.personel {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.block1,
+.block2,
+.block3,
+.block4,
+.block5 {
+  border-radius: 20px;
+  padding: 15px;
+}
+.block1 h2,
+.block2 h2,
+.block3 h2,
+.block4 h2,
+.block5 h2 {
+  margin-bottom: 20px;
+}
+
+.block1 {
+  background-color: var(--violet);
+  grid-area: 1/1/7/7;
+  position: relative;
+}
+.block1 .name {
+  color: var(--white);
+}
+.block1 h2 {
+  color: var(--white);
+}
+.block1 p {
+  color: var(--light-grey-2);
+}
+
+.block2 {
+  background-color: var(--grey-blue);
+  grid-area: 1/7/7/10;
+}
+.block2 .name {
+  color: var(--white);
+}
+.block2 h2 {
+  color: var(--white);
+}
+.block2 p {
+  color: var(--light-grey-2);
+}
+.block3 {
+  background-color: var(--white);
+  grid-area: 1/ 10/ 13/ 13;
+}
+.block3 .name {
+  color: var(--black-blue);
+}
+.block3 h2 {
+  color: var(--black-blue);
+}
+.block3 p {
+  color: var(--grey-blue);
+}
+.block4 {
+  background-color: var(--white);
+
+  grid-area: 7/4/13/10;
+}
+.block4 .name {
+  color: var(--black-blue);
+}
+.block4 h2 {
+  color: var(--black-blue);
+}
+.block4 p {
+  color: var(--grey-blue);
+}
+.block5 {
+  background-color: var(--black-blue);
+  grid-area: 7/1/13/4;
+}
+.block5 .name {
+  color: var(--white);
+}
+.block5 h2 {
+  color: var(--white);
+}
+.block5 p {
+  color: var(--white);
+}
+
+/*Mobile*/
+@media screen and (max-width: 325px) {
+  .container {
+    height: 1800px;
+  }
+  #grid {
+    display: block;
+  }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5 {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+}
